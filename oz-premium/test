@@ -1,0 +1,20 @@
+<TableContainer sx={{ pb: 2 }}>
+  <Table sx={{ minWidth: 650 }} aria-label="simple table">
+    <TableBody>
+      {tableContent.map((content, index) => (
+        <TableRow key={index}>
+          <TableCell align="left" sx={{ p: 0 }}> {/* Remove padding to allow Grid to control spacing */}
+            <Grid container direction={{ xs: 'column', md: 'row' }}>
+              <Grid item xs={12} md={3} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', p: 2 }}>
+                <Box sx={{ fontSize: '16px' }}>{content.title}</Box>
+              </Grid>
+              <Grid item xs={12} md={9} sx={{ p: 2 }}>
+                <Box dangerouslySetInnerHTML={{ __html: content.content }} sx={{ fontSize: '16px' }} />
+              </Grid>
+            </Grid>
+          </TableCell>
+        </TableRow>
+      ))}
+    </TableBody>
+  </Table>
+</TableContainer>
