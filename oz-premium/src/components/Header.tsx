@@ -48,7 +48,7 @@ export default function BannerHeader() {
           paddingY: { xs: 2, md: 1.5 },
           // paddingX: { xs: 2, md:3 },
           pl: { xs: 2, md: 3 },
-          pr: { xs: 2, md: 2 },
+          pr:  2,
           bgcolor: 'primary.main',
         }}
       >

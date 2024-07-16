@@ -1,6 +1,6 @@
 'use client'
 import Box from '@mui/material/Box';
-import Image from 'next/image'; // Assuming you're using Next.js Image component
+import Image from "next/image"; // Assuming you're using Next.js Image component
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Link from 'next/link';
@@ -20,11 +20,14 @@ export default function Logo() {
           <Image
             src={'/Logo.png'}
             alt='Company Logo'
-            // layout="intrinsic"
-            layout="responsive"
-            width={120} // Adjust the width based on the screen size
+            // Adjust the width based on the screen size
+            width={120}
             height={200}
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
           </Link>
       </Box>
     );

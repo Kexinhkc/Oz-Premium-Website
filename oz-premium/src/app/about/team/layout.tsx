@@ -16,8 +16,8 @@ export default function UserPageLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<>
 			{children}
-		</html>
+		</>
 	);
 }

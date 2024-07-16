@@ -48,7 +48,15 @@ export default function Footer() {
                     {/* Logo Column */}
                     <Grid item xs={12} md={3} display="flex" flexDirection="column" alignItems="center" justifyContent='space-between' >
                         <Link href='/'>
-                            <Image src={'/Logo.png'} alt='logo' width={200} height={200} layout="intrinsic" />
+                            <Image
+                                src={'/Logo.png'}
+                                alt='logo'
+                                width={200}
+                                height={200}
+                                style={{
+                                    maxWidth: "100%",
+                                    height: "auto"
+                                }} />
                         </Link>
 
                         <Box id='copyright'

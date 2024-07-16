@@ -61,9 +61,13 @@ export default function Bio({params}: {params: {name: string}}) {
   
     return (
         <>
+          <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+
             <Header />
-                <Container maxWidth='xl'>
-                    <Box id="most outer box" sx={{display:'flex', flexDirection:'column', gap:2, paddingY:{xs:6,md:8} ,paddingX:{xs:4,md:8}}}>
+                <Box component="main" sx={{ flexGrow: 1 }}>
+            
+                    <Container maxWidth='xl'>
+                        <Box id="most outer box" sx={{display:'flex', flexDirection:'column', gap:2, paddingY:{xs:6,md:8} ,paddingX:{xs:4,md:8}}}>
                     
                            <Grid container spacing={{ xs: 2, sm: 3, lg: 6 }}>
                                 <Grid item xs={12} lg={3} gap={2}>
@@ -87,9 +91,7 @@ export default function Bio({params}: {params: {name: string}}) {
                                          
                                 </Box>
                                 </Grid>
-
-                               
-
+                                
                                 <Grid item xs={12} lg={9}>
                                 {/* Details of the member */}
                                 <Box>
@@ -117,8 +119,10 @@ export default function Bio({params}: {params: {name: string}}) {
                             </Grid>
                         </Box>
                     </Container>
+                    </Box>
 
             <Footer />
+            </Box>
       </>
     );
   }
