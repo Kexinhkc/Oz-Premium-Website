@@ -39,7 +39,7 @@ const Page = () => {
               <Typography fontWeight={500} paddingBottom={1}>
                 DDR Forms
               </Typography>
-              <Link href="https://www.ozpremiumfinance.com.au/ddr" underline="always">
+              <Link href="https://www.ozpremiumfinance.com.au/ddr" underline="hover">
                 https://www.ozpremiumfinance.com.au/ddr
               </Link>
             </Box>

@@ -1,9 +1,8 @@
 'use client'
-import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Box from '@mui/material/Box';
-import { Typography } from '@mui/material';
+import { Typography, Button } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
@@ -52,8 +51,6 @@ export default function NavMenu() {
     const handleClose = () => {
     setAnchorEl(null);
     };
-
-
 
     useEffect(() => {
     // This will set isClient to true only after the component mounts,
@@ -106,7 +103,7 @@ export default function NavMenu() {
 
         </Box>
 
-        <Button variant="contained" color="primary" disableElevation sx={{ borderRadius: 10 }}>
+        <Button variant="outlined" disableElevation sx={{color:'white', border:'1px solid', borderColor:'white', borderRadius:'5px'}}>
           Login
         </Button>
         </Box>

@@ -1,9 +1,8 @@
 
 import { Button, Grid, Typography, Box, useMediaQuery, Theme } from "@mui/material";
-import Link from "next/link";
 import SideMenu from "./SideMenu";
 import Logo from "./LogoResponsive";
-// import SideMenu from "./landing-Page/SideMenu";
+import NavMenu from "./NavMenu";
 
 interface navHeadings {
     text: string;
@@ -35,7 +34,7 @@ const navHeadings: navHeadings[]=[
 
 ]
 
-export default function BannerHeader() {
+export default function Header() {
   return (
     <>
       <Box
@@ -48,8 +47,9 @@ export default function BannerHeader() {
           paddingY: { xs: 2, md: 1.5 },
           // paddingX: { xs: 2, md:3 },
           pl: { xs: 2, md: 3 },
-          pr:  2,
+          pr:  3,
           bgcolor: 'primary.main',
+         
         }}
       >
         {/* left */}
@@ -58,21 +58,7 @@ export default function BannerHeader() {
         </Box>
 
         {/* right */}
-        <Box sx={{ display: { md: 'block', xs: 'none' } }}>
-          <Box sx={{ display: 'flex', gap: 3, alignItems: "center" }}>
-            <Box sx={{ display: "flex", gap: 3 }}>
-              {navHeadings.map((item, index) => (
-                <Link href={item.link} key={item.text}>
-                  <Typography color="white" variant="body1">
-                    {item.text}
-                  </Typography>
-                </Link>
-              ))}
-            </Box>
-            <Button variant="contained" disableElevation sx={{ color:'primary.main',backgroundColor: 'white',  borderRadius: 10 }}>
-              Login
-            </Button>
-          </Box>
+          <NavMenu />
         </Box>
 
         {/* Menu button for small screens */}
@@ -90,7 +76,6 @@ export default function BannerHeader() {
             <SideMenu />
           </Button>
         </Box>
-      </Box>
     </>
   );
 }

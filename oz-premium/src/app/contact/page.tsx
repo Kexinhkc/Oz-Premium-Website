@@ -42,7 +42,7 @@ export default function Contact() {
 
             <Box id='image box' sx={{ width: '100%',  justifyContent: 'center', alignItems: 'center', paddingX:{md:5} }}>
                 <Image
-                    src={'/oz-premium-map.png'}
+                    src={'/Oz-Premium-Map.png'}
                     alt='Map of Oz Premium Finance'
                     width={120}
                     height={200}

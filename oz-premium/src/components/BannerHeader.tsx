@@ -3,19 +3,9 @@ import { Button, Grid, Typography, Box, useMediaQuery, Theme } from "@mui/materi
 import Link from "next/link";
 import SideMenu from "./SideMenu";
 import Logo from "./LogoResponsive";
-// import SideMenu from "./landing-Page/SideMenu";
-// import AboutDropdown from "@/components/aboutDropdown";
-import dynamic from "next/dynamic";
 import NavMenu from "./NavMenu";
 
-
-
-// const AboutDropdown = dynamic(() => import('@/components/aboutDropdown'), { ssr: false });
-
-
 export default function BannerHeader() {
-   
-
 
   return (
     <>
@@ -28,7 +18,7 @@ export default function BannerHeader() {
           color: 'white',
           pt: { xs: 1.5, md: 2 },
           pl: { xs: 2, md: 3 },
-          pr: { xs: 2, md: 2 },
+          pr: { xs: 2, md: 5 },
           position: 'absolute', 
           top: 0, 
           left: 0, 
