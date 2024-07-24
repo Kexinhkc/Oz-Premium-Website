@@ -17,7 +17,7 @@ export default function UserPageLayout({
 }>) {
 	return (
 		<>
-			<body>{children}</body>
+			{children}
 		</>
 	);
 }
