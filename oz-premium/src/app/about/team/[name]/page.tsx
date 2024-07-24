@@ -19,7 +19,7 @@ const members = [
     {
         name: "Philip Riquier",
         title: "Director",
-        image: "/bioPhotos/Philip.JPG",
+        image: "/bioPhotos/Philip.jpg",
         description:"Professional Finance Sector Non-Executive Director and Advisor. Philip was previously a group executive of Bendigo/Adelaide Bank Ltd, responsible for multiple banking divisions; Mergers and Acquisitions, Products Treasury, APRA relationship, Rating Agency relationship and major technology projects. Philip was also previously a Director of the Risk Management Association of Australia. Philip is currently a Non-Executive Director of Credit Union SA Ltd and Capital Prudential Pty. Ltd. (which also provides executive management services for an APRA regulated super fund). Philip's advisory clients include several Banks, Superannuation Funds, Private Health Insurers and listed gold EFT issuers."
     },
     {
