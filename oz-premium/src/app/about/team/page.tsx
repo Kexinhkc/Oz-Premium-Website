@@ -88,7 +88,7 @@ export default function Team(){
                                         width: '180px',
                                         height: '210px',
                                     }}>
-                                        <Image src={member.image} alt='Bio Photo'
+                                        <Image src={member.image} alt='Bio Photo' width={180} height={210}
                                         style={{
                                             width: '100%',
                                             height: '100%',

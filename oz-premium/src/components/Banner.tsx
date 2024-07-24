@@ -47,7 +47,7 @@ export default function Banner(){
 
   <Typography fontSize={18} fontWeight={400} textAlign={'center'} sx ={{fontSize:{xs:'14px',md:'18px'}, lineHeight:{xs:1}}}>The Premium Way To Fund Your Insurance </Typography>
 
-  <Box sx={{pt: {xs:4, md: 4}}}>
+  <Box sx={{pt: {xs:5, md: 4}}}>
     <Link href={'/products'}>
       <LearnMore content="Learn More"/>
     </Link>

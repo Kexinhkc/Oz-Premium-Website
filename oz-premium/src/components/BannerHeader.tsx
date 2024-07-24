@@ -27,31 +27,32 @@ export default function BannerHeader() {
           
         }}
       >
-        {/* left */}
-        <Box>
-          <Logo />
+          {/* left */}
+          <Box>
+            <Logo />
+          </Box>
+
+          {/* right */}
+          <NavMenu />
+
+          {/* Menu button for small screens */}
+          <Box id="sideMenu" sx={{ display: { xs: 'block', md: 'none',} }}>
+            <Button
+              id="button comp"
+              sx={{
+                display: 'flex',
+                justifyContent: 'end',
+                padding: 0,
+                color: 'white'
+              
+              }}
+            >
+              <SideMenu />
+            </Button>
+          </Box>
+
         </Box>
 
-        {/* right */}
-        <NavMenu />
-
-        </Box>
-
-        {/* Menu button for small screens */}
-        <Box id="sideMenu" sx={{ display: { md: 'none', xs: 'block' } }}>
-          <Button
-            id="button comp"
-            sx={{
-              display: 'flex',
-              justifyContent: 'end',
-              padding: 0,
-              color: 'white'
-             
-            }}
-          >
-            <SideMenu />
-          </Button>
-        </Box>
     </>
   );
 }

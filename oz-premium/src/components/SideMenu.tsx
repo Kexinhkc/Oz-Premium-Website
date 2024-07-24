@@ -24,7 +24,7 @@ export default function SideMenu() {
 				justifyContent="flex-end"
 				onClick={handleMenuClick}
 			>
-				<Menu sx={{ color: 'white' }} />
+				<Menu  sx={{ color: 'white', fontSize:'26px'  }} />
 			</Box>
 
 			{isMenuOpen && (
@@ -61,64 +61,3 @@ export default function SideMenu() {
 		</>
 	);
 }
-
-
-
-
-
-	// const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-	// const handleMenuClick = () => {
-	// 	setIsMenuOpen(!isMenuOpen);
-	// };
-
-	// const handleMenuClose = () => {
-	// 	setIsMenuOpen(!isMenuOpen);
-	// };
-
-	// return (
-	// 	<>
-	// 		<Box
-	// 			display="flex"
-	// 			justifyContent="flex-end"
-	// 			onClick={handleMenuClick}
-	// 		>
-	// 			<Menu />
-	// 		</Box>
-
-	// 		{isMenuOpen && (
-	// 			<Box
-	// 				sx={{
-	// 					position: 'fixed',
-	// 					top: 0,
-	// 					right: 0,
-	// 					bottom: 0,
-	// 					width: '300px',
-	// 					backgroundColor: '#242424',
-	// 					zIndex: 9999,
-	// 				}}
-	// 			>
-	// 				{/*To locate the cross icon the same position as the hamburger icon*/}
-	// 				<Container maxWidth="xl">
-	// 					<Box
-	// 						sx={{
-	// 							width: '100%',
-	// 							height: 60,
-	// 							display: 'flex',
-	// 							justifyContent: 'end',
-	// 							alignItems: 'center',
-	// 						}}
-	// 					>
-	// 						<CloseIcon
-	// 							onClick={handleMenuClose}
-	// 							color={'secondary'}
-	// 						/>
-	// 					</Box>
-	// 				</Container>
-
-	// 				<SideMenuHeadings />
-	// 			</Box>
-	// 		)}
-	// 	</>
-	// );
-
