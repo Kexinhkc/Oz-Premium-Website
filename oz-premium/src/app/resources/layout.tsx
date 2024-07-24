@@ -4,6 +4,8 @@ import {
 	WEBSITE_NAME,
 } from '@/components/metadata';
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 export const metadata= {
 	title: `Resources - ${WEBSITE_NAME}`,
 	description: WEBSITE_DESCRIPTION,
@@ -22,6 +24,7 @@ export default function UserPageLayout({
 	return (
 		<>
 			{children}
+			<SpeedInsights />
 		</>
 	);
 }

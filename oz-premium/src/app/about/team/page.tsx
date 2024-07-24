@@ -2,6 +2,7 @@ import { Typography, Box, Container, Grid } from '@mui/material';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from 'next/link';
+import Image from 'next/image';
 
 const members = [
     {
@@ -87,7 +88,7 @@ export default function Team(){
                                         width: '180px',
                                         height: '210px',
                                     }}>
-                                        <img src={member.image} alt='Bio Photo'
+                                        <Image src={member.image} alt='Bio Photo'
                                         style={{
                                             width: '100%',
                                             height: '100%',
