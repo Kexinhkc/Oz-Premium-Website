@@ -43,8 +43,8 @@ export default function Footer() {
     return (
         <Box id='Footer Outer Box' sx={{paddingY:{xs:6,md:8},  backgroundColor: 'secondary.light', width: '100%' }}>
             <Container maxWidth='xl'>
-                {/* <Box display={'flex'} justifyContent={'center'}> */}
                 <Grid container spacing={5} sx={{ color: 'white' }}>
+                    
                     {/* Logo Column */}
                     <Grid item xs={12} md={3} display="flex" flexDirection="column" alignItems="center" justifyContent='space-between' >
                         <Link href='/'>
