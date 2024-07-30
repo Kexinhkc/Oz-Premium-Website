@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "*",
         disallow: '/resources/',
       },
-      sitemap: ["https://ozpremiumfinance/sitemap.xml"]
+      sitemap: ["https://ozpremiumfinance/sitemap.ts"]
     };
   }
