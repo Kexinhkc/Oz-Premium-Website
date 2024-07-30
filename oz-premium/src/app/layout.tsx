@@ -30,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-
+      <head>
+        <meta name="google-site-verification" content="noTcEEs4AJanUbtLDR7Jc5l54SfvF5FPhjPdkT_0tTg" />
+      </head>
       <body >
 
         <ThemeProvider theme={theme}>
