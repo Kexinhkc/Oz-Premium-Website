@@ -37,7 +37,7 @@ export default function Investor() {
                     
                     <Box sx={{textAlign:'center', pt:{xs:6,md:8}}}>
                         <Link href='/investors'>
-                            <LearnMore content='LearnMore'/>
+                            <LearnMore content='Learn More'/>
                         </Link>
                     </Box>
                 </Box>

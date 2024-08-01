@@ -103,10 +103,21 @@ export default function NavMenu() {
 
         </Box>
 
-        <Button variant="outlined" disableElevation sx={{color:'white', border:'1px solid', borderColor:'white', borderRadius:'5px'}}>
-          Login
-        </Button>
-        </Box>
+            <Button 
+            variant="outlined" 
+            disableElevation 
+            sx={{
+              color:'white', 
+              border:'1px solid', 
+              borderColor:'white', 
+              borderRadius:'5px'}}
+              component="a"
+              href="https://odyssey.redplanetsoftware.com/express/#/oz/login"
+              target="_blank"
+              rel="noopener noreferrer">
+              Login
+            </Button>
+          </Box>
         </Box>
 
       <Menu

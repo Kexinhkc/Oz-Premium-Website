@@ -40,9 +40,11 @@ export default function ContactUs(){
                                 <Grid id="email grid" item xs={12} md={4} display="flex" justifyContent="center">
                                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
                                     <Email />
-                                    <Typography fontSize={'19px'}>
-                                    info@ozpremiumfinance.com.au
-                                    </Typography>
+                                    <a href="mailto:info@ozpremiumfinance.com.au">
+                                        <Typography fontSize={'19px'}>
+                                        info@ozpremiumfinance.com.au
+                                        </Typography>
+                                    </a>
                                 </Box>
                                 </Grid>
 
@@ -59,18 +61,11 @@ export default function ContactUs(){
                                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
                                     <Location />
                                     <Typography fontSize={'19px'}>
-                                    67 King William Road, Unley SA
+                                    67 King William Road, Unley SA 5061
                                     </Typography>
                                 </Box>
                                 </Grid>
                             </Grid>
-
-                            {/* Learn More Button */}
-                            {/* <Grid container>
-                                <Grid item xs={12} sx={{ textAlign: 'center', pt: { xs: 6, md: 8 } }}>
-                                <LearnMore content='Contact Us'/>
-                                </Grid>
-                            </Grid> */}
 
                         </Box>
             </Container>

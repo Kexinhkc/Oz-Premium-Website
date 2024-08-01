@@ -31,12 +31,13 @@ const companyHeadings = [
 const contactHeadings = [
     { title: 'Email', content: 'info@ozpremiumfinance.com.au' },
     { title: 'Phone', content: '1300 570 407' },
-    { title: 'Office', content: '67 King William Road, Unley SA' }
+    { title: 'Office', content: '67 King William Road, Unley SA 5061' }
 ];
 
 const settingHeadings = [
-    'Cookies Settings',
-    'Privacy'
+    {title:'Terms of Use', pdfPath: '/pdfs/privacy-policy.pdf'},
+    {title:'Privacy', pdfPath: '/pdfs/terms-of-use.pdf'},
+    
 ];
 
 export default function Footer() {
@@ -70,9 +71,10 @@ export default function Footer() {
                             <Typography variant='caption'>Oz Premium Finance</Typography>
                         </Box> 
 
-                        <LinkedIn sx={{ fontSize: '35px', color:'white' }}/>
+                        <a href="https://www.linkedin.com/company/ozpremiumfinance/" target="_blank" rel="noopener noreferrer">
+                            <LinkedIn sx={{ fontSize: '35px', color:'white' }}/>
+                        </a>
 
-                        
                     </Grid>
 
                     {/* Company Column */}
@@ -94,12 +96,14 @@ export default function Footer() {
                         <Typography variant="h6" sx={{ mb: 1 }}>
                             Contact Us
                         </Typography>
+
                         <Box display="flex" sx={{flexDirection:'column', gap:2, justifyContent:'start'}}>
                         {contactHeadings.map((item, index) => (
                             <Box id='map box' key={index} display="flex" sx={{gap:2}} >
                                 <Typography fontWeight={500}>
                                     {item.title}
                                 </Typography>
+                                
                                 <Typography fontWeight={300}>
                                     {item.content}
                                 </Typography>
@@ -111,12 +115,14 @@ export default function Footer() {
                     {/* Settings Column */}
                     <Grid item xs={12} md={3} display="flex" flexDirection="column" alignItems="center" gap={2}>
                         <Typography variant="h6" sx={{ mb: 1 }}>
-                            Settings
+                            Resources
                         </Typography>
                         {settingHeadings.map((item, index) => (
-                            <Typography key={index} fontWeight={300}>
-                                {item}
-                            </Typography>
+                            <a href={item.pdfPath} key={index} target="_blank" rel="noopener noreferrer">
+                                <Typography key={index} fontWeight={300}>
+                                    {item.title}
+                                </Typography>
+                            </a>
                         ))}
                     </Grid>
                 </Grid>

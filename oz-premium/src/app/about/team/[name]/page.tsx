@@ -43,8 +43,8 @@ const members = [
     {
         name: "Jade Murray",
         title: "Operations Manager",
-        image: "/bioPhotos/Jade.JPG",
-        description:"Jade has over 24 years’ expertise in the insurance premium funding industry. Jade was previously the Operations Manager at Arteva Funding and joined the Oz Premium Finance business in May-23 Specialising in people management,"
+        image: "/bioPhotos/Jade.jpg",
+        description:"With over 24 years' experience in the insurance premium funding industry, Jade is a highly skilled operations professional. Specialising in people management, customer service and product development, Jade uses her experience to lead the Operations team at Oz Premium Finance."
 
     },
    
@@ -102,7 +102,7 @@ export default function Bio({params}: {params: {name: string}}) {
                                         lineHeight: '1.1'}}>    
                                             {member.name}
                                     </Typography>
-                                    <LinkedIn  sx={{ fontSize: '30px', color:'primary.main',  }}/>
+                                    {/* <LinkedIn  sx={{ fontSize: '30px', color:'primary.main',  }}/> */}
                                     </Box>
 
                                     <Typography  color={'text.primary'} sx={{fontSize:{xs:'20px', md:'22px',lg:'24px'}} }>

@@ -6,11 +6,21 @@ export const WEBSITE_DESCRIPTION =
 
 export const WEBSITE_NAME = 'Oz Premium Finance';
 export const WEBSITE_KEYWORDS = [
+    'ozpremiumfinance',
+    'ozpremium finance',
+    'oz premium insurance',
+    'oz premium',
+    'oz premium finance',
+    'Oz Premium',
+    'Oz Premium Finance',
+    'OzPremiumFinance',
+    'Adelaide insurance',
+    'Adelaide insurance broker',
+    'Adelaide Premium',
 	'Finance',
     'Broker',
     'Insurance Finance',
     'Premium Funding',
-    'Oz Premium',
     'Premium Finance',
     'Premium Financing',
     'Insurance Agent',

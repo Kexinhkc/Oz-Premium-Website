@@ -44,7 +44,7 @@ const members = [
     {
         name: "Jade Murray",
         title: "Operations Manager",
-        image: "/bioPhotos/Jade.JPG",
+        image: "/bioPhotos/Jade.jpg",
         profile:"jade-murray"
     },
    

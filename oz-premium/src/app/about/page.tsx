@@ -10,8 +10,10 @@ const sections = [
     {
       title: "Our Experience",
       content: [
-        "Founded in 2023, Oz Premium Finance is on a mission to be an industry leading provider of flexible finance solutions for Australian Business.",
-        "Led by a dedicated group of Industry professionals across Insurance, Finance, Legal and Technology, we bring decades of experience to the Premium Funding industry."
+        "Founded in 2023, Oz Premium Finance is on a mission to be an industry leading provider of flexible premium funding solutions for Australian Businesses.",
+        "Led by a dedicated group of industry professionals across Insurance, Finance, Legal and Technology, we bring decades of experience to the Premium Funding industry.",
+        "Independent and privately owned – we make business decisions quickly and offer fast turn around times – leaving you to carry on doing what you do best.",
+        "We uphold a strong focus on building relationships with broker partners and their clients so that we can make your premium funding experience seamless."
       ]
     },
     {
@@ -24,8 +26,7 @@ const sections = [
     {
       title: "Our Payments Platform",
       content: [
-        "Benefit from our easy payments platform. We offer Direct Debit payments so that you do not have to worry about making your payments on time. We have also partnered with industry leading FinTech providers to offer VISA and MasterCard options for our clients.",
-        "Payments all at the click of a button to save you time."
+        "Benefit from our easy to use payment platform. We offer flexible Direct Debit payments from both bank accounts and credit cards allowing you to sit back and relax knowing that your repayments will be taken on time."
       ]
     }
 ];
@@ -65,8 +66,7 @@ export default function AboutUs() {
 
                 {/* Out Missiom */}
                 <Box sx={{ alignItems: 'start' }}>
-                    {/* Our Mission */}
-                    <Box sx={{}}>
+                    <Box>
                         <Typography color={'primary.main'} sx={{ textAlign:'start', fontSize:{xs:'28px',md:'35px'}, fontWeight:'500' }}>
                         Our Mission
                         </Typography>
@@ -79,6 +79,7 @@ export default function AboutUs() {
                     </Box>
                 </Box>
 
+                {/* Pages */}
                 <Box sx={{ display: 'flex', flexDirection: { xs: 'column' }, alignItems: 'center', gap: { xs: 4, md: 6 }, pt: { xs: 4, md: 8 } }}>
                     {sections.map((section, index) => (
                         <Paper key={index} elevation={6} sx={{ padding: {xs:5,md:7}, width:{xs:'100%',md:'90%'} }}>

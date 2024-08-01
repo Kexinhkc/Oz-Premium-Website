@@ -72,7 +72,7 @@ export default function Contact() {
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
                     <Location />
                     <Typography sx={{fontSize:{xs:'17px', md:'19px'}}}>
-                    67 King William Road, Unley SA
+                    67 King William Road, Unley SA 5061
                     </Typography>
                 </Box>
 

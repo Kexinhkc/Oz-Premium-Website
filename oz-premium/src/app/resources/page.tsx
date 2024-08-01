@@ -31,15 +31,18 @@ const Page = () => {
               <Typography fontWeight={500} paddingBottom={1}>
                 Privacy
               </Typography>
-              <Link href="https://www.ozpremiumfinance.com.au/privacy" underline="hover">
-                https://www.ozpremiumfinance.com.au/privacy
+
+              <Link href="/pdfs/privacy-policy.pdf" target="_blank" underline="hover" sx={{fontFamily:'Roboto, sans-serif'}}>
+                https://www.ozpremiumfinance.com.au/privacy-policy.pdf
               </Link>
             </Box>
+
             <Box>
               <Typography fontWeight={500} paddingBottom={1}>
                 DDR Forms
               </Typography>
-              <Link href="https://www.ozpremiumfinance.com.au/ddr" underline="hover">
+
+              <Link href="https://www.ozpremiumfinance.com.au/ddr" underline="hover" sx={{fontFamily:'sans-serif'}}>
                 https://www.ozpremiumfinance.com.au/ddr
               </Link>
             </Box>
