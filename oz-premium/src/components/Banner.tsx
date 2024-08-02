@@ -43,9 +43,9 @@ export default function Banner(){
     }}
   >
 
-  <Typography  textAlign={'center'} sx ={{typography:{md:'h2'}, fontWeight:{md:400}, fontSize:{xs:'36px'}}}>Oz Premium Finance</Typography>
+  {/* <Typography  textAlign={'center'} sx ={{typography:{md:'h2'}, fontWeight:{md:400}, fontSize:{xs:'36px'}}}>Oz Premium Finance</Typography> */}
 
-  <Typography fontSize={18} fontWeight={400} textAlign={'center'} sx ={{fontSize:{xs:'14px',md:'18px'}, lineHeight:{xs:1}}}>The Premium Way To Fund Your Insurance </Typography>
+  <Typography fontSize={18} fontWeight={400} textAlign={'center'} sx ={{fontSize:{xs:'32px',sm:'50px',md:'64px'}, lineHeight:{xs:1}}}>The Premium Way To Fund Your Insurance </Typography>
 
   <Box sx={{pt: {xs:5, md: 4}}}>
     <Link href={'/products'}>

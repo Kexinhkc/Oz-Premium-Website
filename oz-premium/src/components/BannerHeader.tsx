@@ -17,7 +17,7 @@ export default function BannerHeader() {
           alignItems: "start",
           color: 'white',
           pt: { xs: 1.5, md: 2 },
-          pl: { xs: 2, md: 3 },
+          pl: { xs: 1, md: 3 },
           pr: { xs: 2, md: 5 },
           position: 'absolute', 
           top: 0, 

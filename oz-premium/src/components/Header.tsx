@@ -42,7 +42,7 @@ export default function Header() {
         sx={{
           display: "flex",
           justifyContent: 'space-between',
-          alignItems: "center",
+          alignItems: "start",
           color: 'white',
           paddingY: { xs: 2, md: 1.5 },
           // paddingX: { xs: 2, md:3 },
@@ -58,7 +58,10 @@ export default function Header() {
         </Box>
 
         {/* right */}
+        <Box sx={{pt:1.5}}>
           <NavMenu />
+        </Box>
+         
         </Box>
 
         {/* Menu button for small screens */}

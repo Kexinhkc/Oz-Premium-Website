@@ -60,7 +60,7 @@ export default function NavMenu() {
 
     return (
     <Box>
-        <Box sx={{ display: { md: 'block', xs: 'none' } }}>
+        <Box sx={{ display: { md: 'block', xs: 'none' }, pt:{xs:0,md:1} }}>
           <Box sx={{ display: 'flex', gap: 3, alignItems: "center" }}>
             <Box sx={{ display: "flex", gap: 3 }}>
 
@@ -80,7 +80,8 @@ export default function NavMenu() {
                     key={item.text}
                     
                   >
-                    <Typography variant="body1"> 
+                    <Typography sx={{typography:{xs:'body1', md:'h6'},fontWeight:{md:400}}}
+                    > 
                         About
                     </Typography>
                   
@@ -88,12 +89,21 @@ export default function NavMenu() {
 
                 ) : 
 
-                  <Typography variant="body1" key={item.text}> About</Typography>
+                  <Typography key={item.text} 
+                    sx={{typography:{xs:'body1', md:'h6'},fontWeight:{md:400}}}
+                    > 
+                      About
+                  </Typography>
                 
                 ):( 
 
                   <Link href={item.link} key={item.text} >
-                      <Typography color="white" variant="body1">
+                      <Typography color="white" 
+                      sx={{
+                        typography:{xs:'body1', md:'h6'},
+                        fontWeight:{md:400},
+                      }}
+                        >
                       {item.text}
                       </Typography>
                   </Link>
@@ -110,12 +120,23 @@ export default function NavMenu() {
               color:'white', 
               border:'1px solid', 
               borderColor:'white', 
-              borderRadius:'5px'}}
+              borderRadius:'5px',
+              paddingY:1
+            }}
               component="a"
               href="https://odyssey.redplanetsoftware.com/express/#/oz/login"
               target="_blank"
               rel="noopener noreferrer">
-              Login
+
+                <Typography color="white" 
+                    sx={{
+                      typography:{xs:'body1'},
+                      fontWeight:{md:400},
+                    }}
+                      >
+                      Login
+                </Typography>
+             
             </Button>
           </Box>
         </Box>
