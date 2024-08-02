@@ -44,7 +44,7 @@ const members = [
     {
         name: "Jade Murray",
         title: "Operations Manager",
-        image: "/bioPhotos/Jade.jpg",
+        image: "/bioPhotos/Jade.JPG",
         profile:"jade-murray"
     },
    
@@ -64,8 +64,6 @@ export default function Team(){
                         <Typography color={'primary.main'} sx={{ textAlign:{xs:'center', md:'start'}, fontSize: { xs: '28px', md: '35px' }, pb:{md:1},fontWeight: '500' }}>
                             Meet Our Team
                         </Typography>
-
-                        {/* <Box sx={{display:'flex', gap:3, pt: { xs: 4, md: 8 } }}> */}
                         
                     <Box id='box outside map'
                         sx={{
