@@ -12,19 +12,19 @@ interface Processes {
 }
 const processes:Processes[] = [  
     {
-        name:'Step 1', 
+        name:'Quote', 
         description:'Your insurance broker will provide you with a premium funding quote, along with your insurance invoice/s. This quote will outline your monthly repayment plan.'
     },
     {
-        name:'Step 2', 
+        name:'Online Acceptance', 
         description:'You accept your finance quote online using our simple Online Acceptance process. This process is quick and easy to complete.'
     },
     {
-        name:'Step 3', 
+        name:'Finalise Insurance', 
         description:'Oz Premium Finance will pay your insurance premium/s IN FULL to your insurance broker who will set up your annual insurance policies.'
     },
     {
-        name:'Step 4', 
+        name:'Your Monthly Instalments', 
         description:'You make the agreed monthly instalments to Oz Premium Finance. You can make payments via Direct Debit from your bank account, or via Credit Card (Visa and Mastercard) through our automated payment platform.'
     },
 

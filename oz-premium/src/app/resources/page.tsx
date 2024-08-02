@@ -42,8 +42,8 @@ const Page = () => {
                 DDR Forms
               </Typography>
 
-              <Link href="https://www.ozpremiumfinance.com.au/ddr" underline="hover" sx={{fontFamily:'sans-serif'}}>
-                https://www.ozpremiumfinance.com.au/ddr
+              <Link href="/pdfs/direct-debit-service-agreement.pdf" target="_blank" underline="hover" sx={{fontFamily:'sans-serif'}}>
+                https://www.ozpremiumfinance.com.au/direct-debit-service-agreement.pdf
               </Link>
             </Box>
           </Box>

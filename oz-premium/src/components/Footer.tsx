@@ -35,8 +35,8 @@ const contactHeadings = [
 ];
 
 const settingHeadings = [
-    {title:'Terms of Use', pdfPath: '/pdfs/privacy-policy.pdf'},
-    {title:'Privacy', pdfPath: '/pdfs/terms-of-use.pdf'},
+    {title:'Terms of Use', pdfPath: '/pdfs/terms-of-use.pdf'},
+    {title:'Privacy', pdfPath: '/pdfs/privacy-policy.pdf'},
     
 ];
 

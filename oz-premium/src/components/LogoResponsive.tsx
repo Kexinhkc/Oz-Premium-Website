@@ -12,7 +12,7 @@ export default function Logo() {
     return (
       <Box
         sx={{
-          width: matchesXS ? '90px' : '120px', // Responsive width using MUI breakpoints
+          width: matchesXS ? '90px' : '180px', // Responsive width using MUI breakpoints
           height: 'auto', // Fixed height, adjust as needed
         }}
       >
