@@ -30,10 +30,10 @@ const members = [
         profile:"henry-downer"
     },
     {
-        name: "Sam Morris",
+        name: "Samuel Morris",
         title: "Chief Operating Officer/Director",
         image: "/bioPhotos/Sam.JPG",
-        profile:"sam-morris"
+        profile:"samuel-morris"
     },
     {
         name: "Ben Hage",

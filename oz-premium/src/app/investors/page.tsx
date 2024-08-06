@@ -1,8 +1,9 @@
 import { Container, Grid, Typography, Box } from "@mui/material"
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Popup from "@/components/Popup";
 import ContactUs from "@/components/Buttons/LearnMore";
-import Link from "next/link";
+import Link from '@mui/material/Link';
 import { WebPageJsonLd } from 'next-seo';
 
 const tableContent = [
@@ -47,6 +48,7 @@ export default function Investors() {
         />
             <Header />
             <Container maxWidth='xl'>
+                <Popup />
                 <Box id="most outer box" sx={{ display: 'flex', flexDirection: 'column', gap: 5, paddingY: { xs: 6, md: 8 }, paddingX: { xs: 4, md: 8 }, color:'primary.main' }}>
                 
                     <Typography sx={{ width:{xs:'100%', md:'50%'}, fontSize: { xs: '24px', md: '28px' }, fontWeight: '400' }} >
@@ -97,7 +99,7 @@ export default function Investors() {
 
                         <Box sx={{pt:1}}>
                             <Typography sx={{fontSize:'16px'}}>
-                                Oz Premium Finance Pty Ltd (ABN 55 666 232 319) is a Corporate Authorised Representative (No.1310538) of Oz Premium Funds Management Pty Limited (ACN 674 379 330) under its AFSL (No.55604). Oz Premium Nominees Pty Limited is the trustee of the Oz Premium Funding Trust and the investment management is provided by Oz Premium Finance Pty Ltd. An investment into the Trust is available to wholesale investors (as defined by section 761G of the Corporations Act) in Australia only. The information on this website is general in nature. It does not take into account your specific needs or circumstances, so you should look at your own financial position, objectives and requirements, read the Information Memorandum and seek financial, legal or tax advice appropriate to your situation before making any financial decisions. Please email investor@ozpremiumfinance.com.au or call 1300 570 407 to obtain a copy of the Information Memorandum.
+                            Oz Premium Finance Pty Ltd (ABN 55 666 232 319) is a Corporate Authorised Representative (CAR # 1310538) of Oz Premium Funds Management Pty Limited (ACN 674 379 330) under its AFSL (No. 550643). Oz Premium Nominees Pty Limited (CAR 1310537) is the trustee of the Oz Premium Funding Trust and the investment management is provided by Oz Premium Finance Pty Ltd. An investment into the Trust is available to wholesale investors (as defined by section 761G of the Corporations Act) in Australia only. The information on this website is general in nature. It does not take into account your specific needs or circumstances, so you should look at your own financial position, objectives and requirements, read the Information Memorandum and seek financial, legal or tax advice appropriate to your situation before making any financial decisions. Please email <Link href="mailto:investor@ozpremiumfinance.com.au" underline="hover">investor@ozpremiumfinance.com.au</Link> or call 1300 570 407 to obtain a copy of the Information Memorandum.
                             </Typography>
                         </Box>
 

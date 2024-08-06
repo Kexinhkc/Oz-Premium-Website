@@ -9,42 +9,49 @@ const members = [
         title: "Founder/Director",
         image: "/bioPhotos/Karl.JPG",
         description:"Criminal defence lawyer in 2004. His move into the field of Native Title involved also working in property law, mining law and corporate governance, mainly within the Federal Court system. In the business sphere he has worked as a Venture Capital Fund manager and been a director of Westminster Australia where he has gained experience in Mergers and Acquisitions and banking and finance law, with a strong focus on mediations and negotiations. He has also been involved since 2009 with a registered Australian Charity (PAF) as an investment advisor and Trustee on a volunteer basis.",
+        linkedin:"https://www.linkedin.com/in/karl-kirsten-174b3aa/"
     },
     {
         name: "Jarrod Herring",
         title: "Chief Execitive Officer/Director",
         image: "/bioPhotos/Jarrod.JPG",
         description:"20 years Banking and Executive experience with National Australia Bank Ltd in Australia, across Melbourne, Adelaide, Perth and Sydney regions. Jarrod is highly experienced in Corporate Lending, Commercial Property debt structuring, Compliance, Trade, Finance and Executive Leadership.",
+        linkedin:"https://www.linkedin.com/in/jarrod-h-16217810/"
     },
     {
         name: "Philip Riquier",
         title: "Director",
         image: "/bioPhotos/Philip.jpg",
-        description:"Professional Finance Sector Non-Executive Director and Advisor. Philip was previously a group executive of Bendigo/Adelaide Bank Ltd, responsible for multiple banking divisions; Mergers and Acquisitions, Products Treasury, APRA relationship, Rating Agency relationship and major technology projects. Philip was also previously a Director of the Risk Management Association of Australia. Philip is currently a Non-Executive Director of Credit Union SA Ltd and Capital Prudential Pty. Ltd. (which also provides executive management services for an APRA regulated super fund). Philip's advisory clients include several Banks, Superannuation Funds, Private Health Insurers and listed gold EFT issuers."
+        description:"Professional Finance Sector Non-Executive Director and Advisor. Philip was previously a group executive of Bendigo/Adelaide Bank Ltd, responsible for multiple banking divisions; Mergers and Acquisitions, Products Treasury, APRA relationship, Rating Agency relationship and major technology projects. Philip was also previously a Director of the Risk Management Association of Australia. Philip is currently a Non-Executive Director of Credit Union SA Ltd and Capital Prudential Pty. Ltd. (which also provides executive management services for an APRA regulated super fund). Philip's advisory clients include several Banks, Superannuation Funds, Private Health Insurers and listed gold EFT issuers.",
+        linkedin:"https://www.linkedin.com/in/philipriquier/"
     },
     {
         name: "Henry Downer",
         title: "Chief Financial Officer/Director",
         image: "/bioPhotos/Henry.JPG",
-        description:"Chartered Accountant with over 20 years experience. Henry was at Deloitte for over 15 years, where he led Deloitte's Adelaide Transaction Services team for a number of years, focussed on providing Corporate Advisory, M&A and financial due diligence. Most recently Henry supported Capital Prudential as its CFO in its start up period."
+        description:"Chartered Accountant with over 20 years experience. Henry was at Deloitte for over 15 years, where he led Deloitte's Adelaide Transaction Services team for a number of years, focussed on providing Corporate Advisory, M&A and financial due diligence. Most recently Henry supported Capital Prudential as its CFO in its start up period.",
+        linkedin:"https://www.linkedin.com/in/henrydowner/"
     },
     {
-        name: "Sam Morris",
+        name: "Samuel Morris",
         title: "Chief Operating Officer/Director",
         image: "/bioPhotos/Sam.JPG",
-        description:"Operations / general manager with 15 years experience in both the mining and private wealth industries. Specialising in being the interface between the board and operational team to ensure there is effective board decision making leading to efficient operational outcomes."
+        description:"Operations / general manager with 15 years experience in both the mining and private wealth industries. Specialising in being the interface between the board and operational team to ensure there is effective board decision making leading to efficient operational outcomes.",
+        linkedin:"https://www.linkedin.com/in/samuel-morris-a38526137/"
     },
     {
         name: "Ben Hage",
         title: "Sales and Distribution",
         image: "/bioPhotos/Ben.JPG",
-        description:"Ben is an experienced Financial Services Professional with 25 years experience in finance, predominantly focused on Commercial, business and asset finance; including Mortgage Broking and financial planning. Ben worked with CBA, Westpac, and his own financial services business for the past 20 years in Australia and London. With key relationships across all of the financial services sector, combined with an entrepreneurial flair, Ben adds a broad knowledge of financial products and experience with the industries and businesses that utilise them."
+        description:"Ben is an experienced Financial Services Professional with 25 years experience in finance, predominantly focused on Commercial, business and asset finance; including Mortgage Broking and financial planning. Ben worked with CBA, Westpac, and his own financial services business for the past 20 years in Australia and London. With key relationships across all of the financial services sector, combined with an entrepreneurial flair, Ben adds a broad knowledge of financial products and experience with the industries and businesses that utilise them.",
+        linkedin:"https://www.linkedin.com/in/benhagehageharris/"
     },
     {
         name: "Jade Murray",
         title: "Operations Manager",
         image: "/bioPhotos/Jade.JPG",
-        description:"With over 24 years' experience in the insurance premium funding industry, Jade is a highly skilled operations professional. Specialising in people management, customer service and product development, Jade uses her experience to lead the Operations team at Oz Premium Finance."
+        description:"With over 24 years' experience in the insurance premium funding industry, Jade is a highly skilled operations professional. Specialising in people management, customer service and product development, Jade uses her experience to lead the Operations team at Oz Premium Finance.",
+        linkedin:"https://www.linkedin.com/in/jade-murray-306019106/"
 
     },
    
@@ -96,13 +103,22 @@ export default function Bio({params}: {params: {name: string}}) {
                                 {/* Details of the member */}
                                 <Box>
                                     <Box display="flex" alignItems={'center'} gap={1}>
-                                    <Typography color={'primary.main'} 
-                                    sx={{
-                                        fontSize:{xs:'28px', md:'32px'}, fontWeight:500, 
-                                        lineHeight: '1.1'}}>    
-                                            {member.name}
-                                    </Typography>
-                                    {/* <LinkedIn  sx={{ fontSize: '30px', color:'primary.main',  }}/> */}
+                                        <Box>
+                                            <Typography color={'primary.main'} 
+                                            sx={{
+                                                fontSize:{xs:'28px', md:'32px'}, fontWeight:500, 
+                                                lineHeight: '1.1'}}>    
+                                                    {member.name}
+                                            </Typography>
+                                        </Box>
+                                       
+                                        <Box id="icon box">
+                                            <a href={member.linkedin} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center' }}>
+                                                <LinkedIn  sx={{ fontSize: '32px', color:'primary.main' }}/>
+
+                                            </a>
+                                        </Box>
+                                       
                                     </Box>
 
                                     <Typography  color={'text.primary'} sx={{fontSize:{xs:'20px', md:'22px',lg:'24px'}} }>

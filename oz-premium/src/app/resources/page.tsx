@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Box, Container, Typography, Link } from '@mui/material';
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import ArrowForward from '@mui/icons-material/ArrowForwardIos';
 
 const Page = () => {
   const [viewportHeight, setViewportHeight] = useState('100vh');
@@ -27,25 +28,39 @@ const Page = () => {
             <Typography sx={{ fontSize: { xs: '28px', md: '35px' } }}>
               Resources
             </Typography>
-            <Box>
-              <Typography fontWeight={500} paddingBottom={1}>
-                Privacy
-              </Typography>
 
+            <Box>
               <Link href="/pdfs/privacy-policy.pdf" target="_blank" underline="hover" sx={{fontFamily:'Roboto, sans-serif'}}>
-                https://www.ozpremiumfinance.com.au/privacy-policy.pdf
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                    <Box>
+                      <Typography sx={{ fontSize: { xs: '20px', md: '26px' } }}>
+                          Privacy Policy
+                      </Typography>
+                    </Box>
+
+                    <Box sx={{ display: 'flex', alignItems: 'center'}}>
+                    <ArrowForward sx={{fontSize:{xs:'14px', sm:'20px'}}}/>
+                    </Box>
+                </Box>
               </Link>
             </Box>
 
             <Box>
-              <Typography fontWeight={500} paddingBottom={1}>
-                DDR Forms
-              </Typography>
-
               <Link href="/pdfs/direct-debit-service-agreement.pdf" target="_blank" underline="hover" sx={{fontFamily:'sans-serif'}}>
-                https://www.ozpremiumfinance.com.au/direct-debit-service-agreement.pdf
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                  <Box>
+                    <Typography sx={{ fontSize: { xs: '20px', md: '26px' } }}>
+                      Direct Debit Service Agreement
+                    </Typography>
+                  </Box>
+
+                  <Box sx={{ display: 'flex', alignItems: 'center'}}>
+                    <ArrowForward sx={{fontSize:{xs:'14px', sm:'20px'}}}/>
+                  </Box>
+                </Box>
               </Link>
             </Box>
+
           </Box>
         </Container>
       </Box>

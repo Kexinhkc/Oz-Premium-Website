@@ -40,7 +40,7 @@ export default function Contact() {
         <Container maxWidth="xl">
         <Box id="most outer box" sx={{display:'flex', flexDirection:'column', gap:3, paddingY:{xs:6,md:8} ,paddingX:{xs:4,md:8}, color:'primary.main'}}>
 
-            <Box id='image box' sx={{ width: '100%',  justifyContent: 'center', alignItems: 'center', paddingX:{md:5} }}>
+            {/* <Box id='image box' sx={{ width: '100%',  justifyContent: 'center', alignItems: 'center', paddingX:{md:5} }}>
                 <Image
                     src={'/Oz-Premium-Map.png'}
                     alt='Map of Oz Premium Finance'
@@ -51,15 +51,17 @@ export default function Contact() {
                         width: "100%",
                         height: "auto"
                     }} />
-            </Box>
+            </Box> */}
             
             <Box sx={{paddingY:{xs:5, md:7}, display:'flex', flexDirection:'column', gap:{xs:4, md:2}}}>
 
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
                     <Email />
-                    <Typography sx={{fontSize:{xs:'17px', md:'19px'}}}>
-                    info@ozpremiumfinance.com.au
-                    </Typography>
+                    <a  href="mailto:info@ozpremiumfinance.com.au">
+                        <Typography sx={{fontSize:{xs:'17px', md:'19px'}}}>
+                        info@ozpremiumfinance.com.au
+                        </Typography>
+                    </a>
                 </Box>
                 
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>

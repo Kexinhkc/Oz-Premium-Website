@@ -62,13 +62,16 @@ export default function Footer() {
 
                         <Box id='copyright'
                         display="flex"
+                        flexDirection={'column'}
+                        alignContent={'center'}
                         justifyContent="center"
                         bottom={0}
                         alignItems="center"
                         color="white"
                 >
-                            <Copyright sx={{ height: '15px', mb: '1px' }} />
-                            <Typography variant='caption'>Oz Premium Finance</Typography>
+                            {/* <Copyright sx={{ height: '15px', mb: '1px' }} /> */}
+                            <Typography variant='subtitle2'>2024 © Oz Premium Finance Pty Ltd </Typography> 
+                            <Typography variant='subtitle2'> ABN 55 666 232 319</Typography>
                         </Box> 
 
                         <a href="https://www.linkedin.com/company/ozpremiumfinance/" target="_blank" rel="noopener noreferrer">

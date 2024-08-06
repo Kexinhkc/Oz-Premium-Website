@@ -46,12 +46,19 @@ export default function Banner(){
   {/* <Typography  textAlign={'center'} sx ={{typography:{md:'h2'}, fontWeight:{md:400}, fontSize:{xs:'36px'}}}>Oz Premium Finance</Typography> */}
 
   <Typography fontSize={18} fontWeight={400} textAlign={'center'} sx ={{fontSize:{xs:'32px',sm:'50px',md:'64px'}, lineHeight:{xs:1}}}>The Premium Way To Fund Your Insurance </Typography>
+  <Typography fontWeight={300} textAlign={'center'} sx ={{pt: 2, fontSize:{xs:'16px',sm:'20px',md:'20px'}, lineHeight:{xs:2}}}>
+    {/* Insurance premium funding enables businesses to spread the cost of their annual insurance premiums over time, thereby improving their cash flow management and financial flexibility. <br /> */}
 
-  <Box sx={{pt: {xs:5, md: 5}}}>
+    {/* This service is essential for maintaining the uninterrupted protection businesses need to safeguard against risks and uncertainties inherent in their operations. <br />  */}
+
+    Free up your business cash flow with Oz Premium Finance, and pay your insurance in manageable monthly instalments. 
+ </Typography>
+
+  {/* <Box sx={{pt: {xs:5, md: 5}}}>
     <Link href={'/products'}>
       <LearnMore content="Learn More"/>
     </Link>
-  </Box>
+  </Box> */}
   
   </Box>
 </Box>

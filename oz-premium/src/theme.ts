@@ -22,11 +22,13 @@ let theme = createTheme({
     secondary:{
         main:'#2A2A2A',
         light:'#363636',
+        dark:'#000000',
     },
     text:{
         primary:'#1f2763',
         secondary:'#FFFFFF',
     },
+  
   }
 });
 
