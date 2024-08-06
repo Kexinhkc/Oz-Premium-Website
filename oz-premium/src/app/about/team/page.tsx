@@ -20,7 +20,7 @@ const members = [
     {
         name: "Philip Riquier",
         title: "Director",
-        image: "/bioPhotos/Philip.jpg",
+        image: "/bioPhotos/Philip.JPG",
         profile:"philip-riquier"
     },
     {

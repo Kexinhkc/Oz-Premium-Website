@@ -8,7 +8,7 @@ export default function Investor() {
         <Box 
         sx={{
             paddingX:{xs:4,md:8},
-            paddingY:{xs:6,md:8}, 
+            paddingY:{xs:8,md:12}, 
             width:'100%'}}
             >
             <Container maxWidth='xl'>
