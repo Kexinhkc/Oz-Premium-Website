@@ -4,8 +4,8 @@ import MenuItem from '@mui/material/MenuItem';
 import Box from '@mui/material/Box';
 import { Typography, Button } from '@mui/material';
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-
+import Link from '@mui/material/Link';
+import NextLink from 'next/link';
 
 interface navHeadings {
     text: string;
@@ -38,19 +38,30 @@ const navHeadings: navHeadings[]=[
 ]
 
 export default function NavMenu() {
-    const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null); //contain null or HTMLElement
+    const [aboutAnchorEl, setAboutAnchorEl] = React.useState<null | HTMLElement>(null); //contain null or HTMLElement
+    const [loginAnchorEl, setLoginAnchorEl] = React.useState<null | HTMLElement>(null); //contain null or HTMLElement
+
     const [isClient, setIsClient] = useState(false);
 
-    const open = Boolean(anchorEl); //return true if anchorEl is not null
+    const aboutOpen = Boolean(aboutAnchorEl); //return true if anchorEl is not null
+    const loginOpen = Boolean(loginAnchorEl); 
 
     //When the button is clicked, the anchorEl state is set to the button element that was clicked. This is used to position the menu.
-    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget);
+    const handleAboutClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAboutAnchorEl(event.currentTarget);
     };
 
-    const handleClose = () => {
-    setAnchorEl(null);
+    const handleAboutClose = () => {
+    setAboutAnchorEl(null);
     };
+
+    const handleLoginClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+      setLoginAnchorEl(event.currentTarget);
+      };
+  
+      const handleLoginClose = () => {
+      setLoginAnchorEl(null);
+      };
 
     useEffect(() => {
     // This will set isClient to true only after the component mounts,
@@ -71,11 +82,11 @@ export default function NavMenu() {
                 isClient ? ( 
                 
                   <Button
-                    id="basic-button"
-                    aria-controls={open ? 'about-menu' : undefined} //if open is true, the 'about-menu' element is controlled by this button. Helps screeb readers understand the relationship between the button and the menu that it controls.
+                    id="about-button"
+                    aria-controls={aboutOpen ? 'about-menu' : undefined} //if open is true, the 'about-menu' element is controlled by this button. Helps screen readers understand the relationship between the button and the menu that it controls.
                     aria-haspopup="true" //a signal to aassistive technologies that the button has a popup menu
-                    aria-expanded={open ? 'true' : undefined}//reflects the state of the popup menu
-                    onClick={handleClick}
+                    aria-expanded={aboutOpen ? 'true' : undefined}//reflects the state of the popup menu
+                    onClick={handleAboutClick}
                     sx={{ color: 'white', textTransform: 'none', padding: 0,  verticalAlign: 'start',}}
                     key={item.text}
                     
@@ -112,7 +123,37 @@ export default function NavMenu() {
                 ))}
 
         </Box>
-
+            
+            {/* Login button  */}
+            {isClient? (  
+              
+            <Button 
+            variant="outlined" 
+            id="login-button"
+            aria-controls={loginOpen ? 'login-menu' : undefined}
+            aria-haspopup="true"
+            aria-expanded={aboutOpen ? 'true' : undefined}
+            onClick={handleLoginClick}
+            disableElevation 
+            sx={{
+              color:'white', 
+              border:'1px solid', 
+              borderColor:'white', 
+              borderRadius:'5px',
+              paddingY:1
+            }}
+            >
+                <Typography color="white" 
+                    sx={{
+                      typography:{xs:'body1'},
+                      fontWeight:{md:400},
+                    }}
+                      >
+                      Login
+                </Typography>
+             
+            </Button>)
+            :
             <Button 
             variant="outlined" 
             disableElevation 
@@ -138,40 +179,73 @@ export default function NavMenu() {
                 </Typography>
              
             </Button>
+            }
+           
           </Box>
         </Box>
 
+      {/* 'About' dropdown menu */}
       <Menu
         id="about-menu"
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
+        anchorEl={aboutAnchorEl}
+        open={aboutOpen}
+        onClose={handleAboutClose}
         MenuListProps={{
-          'aria-labelledby': 'basic-button',
+          'aria-labelledby': 'about-button',
         }}
         sx={{ 
           color: 'white',  
           '& .MuiPaper-root': {
              // Targeting the Paper component inside Menu
-            borderRadius: 0, // Setting corner radius to 0
+            borderRadius: 0.5, // Setting corner radius to 0
           }
         }}
         anchorOrigin={{
           vertical: 'bottom', // Align the top of the Menu with the bottom of the anchorEl
           horizontal: 'left', // Align the left of the Menu with the left of the anchorEl
         }}
-        // transformOrigin={{
-        //   vertical: 'top', // Animation starts from the top of the Menu
-        //   horizontal: 'left', // Animation starts from the left of the Menu
-        // }}
-        
+     
       >
-        <Link href="/about">
-          <MenuItem onClick={handleClose}>About Us</MenuItem>
+        <Link component={NextLink} href="/about">
+          <MenuItem onClick={handleAboutClose}>About Us</MenuItem>
         </Link>
 
-        <Link href="/about/team">
-          <MenuItem onClick={handleClose}>Our Team</MenuItem>
+        <Link component={NextLink} href="/about/team">
+          <MenuItem onClick={handleAboutClose}>Our Team</MenuItem>
+        </Link>
+      </Menu>
+
+
+       {/* 'Login' dropdown menu */}
+       <Menu
+        id="login-menu"
+        anchorEl={loginAnchorEl}
+        open={loginOpen}
+        onClose={handleLoginClose}
+        MenuListProps={{
+          'aria-labelledby': 'login-button',
+        }}
+        sx={{ 
+          color: 'white',  
+         
+          '& .MuiPaper-root': {
+             // Targeting the Paper component inside Menu
+            borderRadius: 0.5, // Setting corner radius to 0
+            // transform: 'translateY(32px)',
+          }
+        }}
+        anchorOrigin={{
+          vertical: 'bottom', // Align the top of the Menu with the bottom of the anchorEl
+          horizontal: 'left', // Align the left of the Menu with the left of the anchorEl
+        }}
+     
+      >
+        <Link href="https://odyssey.redplanetsoftware.com/express/#/oz/login">
+          <MenuItem onClick={handleLoginClose}>Brokers Login</MenuItem>
+        </Link>
+
+        <Link href="https://williambuck-portal.7g.com.au/login/apply/68322/647">
+          <MenuItem onClick={handleLoginClose}>Investors Login</MenuItem>
         </Link>
       </Menu>
     </Box>

@@ -19,7 +19,7 @@ export default function Why() {
                 <Box sx={{ pt: { xs: 4, md: 4 }, display: 'flex', flexDirection: { xs: 'column', md: 'row' }, alignItems: 'start' }}>
                     <Box sx={{ width: { xs: '100%', md: '50%' }, color: 'primary.main', mb: { xs: 3, md: 0 } }}>
                     <Typography fontSize={'20px'}>
-                        Spread the cost of the annual insurance premiums over time, thereby improving their cash flow management and financial flexibility
+                        Spread the cost of the annual insurance premiums over time, thereby improving their cash flow management and financial flexibility.
                     </Typography>
                 </Box>
 
